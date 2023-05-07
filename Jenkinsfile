@@ -11,11 +11,11 @@ pipeline {
     }
 
     stage('Build image') {
-      steps{
+      steps {
         sh 'docker build -t "cubensquare/python"  "$WORKSPACE"/'
         }
       }
-    }
+    
     stage('Login') {
       steps {
         sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
