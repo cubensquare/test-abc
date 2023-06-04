@@ -16,5 +16,5 @@ spec:
        containers:
        - name: mycontainer
          image: prom/prometheus
-         containerPort
+         containerPort:
          - port: 9100
