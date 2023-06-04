@@ -16,3 +16,4 @@ spec:
        containers:
        - name: mycontainer
          image: prom/prometheus
+         containerPort
